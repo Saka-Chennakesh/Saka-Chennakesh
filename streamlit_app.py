@@ -116,7 +116,7 @@ Hands on with Model Development, Model Validation, Model Deployment, Model Monit
         """
 ### Projects
 #### Evoke Technologies:
-1.	Invoice digitization to extract key invoice attributes from large variety of scanned/system generated invoices using Deep learning architectures such as Keras Retinanet, Yolov5, BERT for a Chemical Manufacturer.
+1.	[Invoice digitization](https://www.evoketechnologies.com/blog/invoice-digitization-using-resnet50-yolov5-and-adobe-ocr/) to extract key invoice attributes from large variety of scanned/system generated invoices using Deep learning architectures such as Keras Retinanet, Yolov5, BERT for a Chemical Manufacturer.
 2.	Extracting key attributes such as expiry date, manufacturer date, batches, chemical name, chemical composition from Scanned/System generated Certificate of Analysis for a Chemical Manufacturer using Deep learning architectures such as Keras Retinanet, Yolov5 and NLP based Transformer models.
 3.	Checkbox detection/classification of different forms for one of the largest door manufacturers in North America using Deep learning architectures such as Keras Retinanet and Yolov5.
 4.	Price Optimization using Statistical Models, Deep Learning (Yolov3 and MTCNN) to add loaded images for Online Retailer.
