@@ -93,7 +93,7 @@ Hands on with Model Development, Model Validation, Model Deployment, Model Monit
     )
     
 with st.expander("See explanation"):
-    st.markdown("""
+    st.write("""
     ### Technical Purview
         
     SAS (SAS Base, SAS Advanced, SAS SQL, SAS Macros, SAS Stat, SAS IML, SAS Graphs etc.,), SAS EM & SAS EG
