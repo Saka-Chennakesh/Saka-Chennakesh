@@ -89,7 +89,11 @@ Hands on with Model Development, Model Validation, Model Deployment, Model Monit
 
 •	Coordinating with various stakeholders in line of business, model implementation team, Model Risk Management, Model Governance to ensure flawless and timely delivery of models in compliance with Model Risk Policies and Regulatory Frameworks.
 
+    """
+    )
+    
 with st.expander("See explanation"):
+    st.markdown("""
     ### Technical Purview
         
     SAS (SAS Base, SAS Advanced, SAS SQL, SAS Macros, SAS Stat, SAS IML, SAS Graphs etc.,), SAS EM & SAS EG
