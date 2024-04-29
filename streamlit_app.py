@@ -92,9 +92,8 @@ Hands on with Model Development, Model Validation, Model Deployment, Model Monit
     """
     )
         
-    expander = st.expander("See explanation")
+    expander = st.expander("### Technical Purview")
     expander.write("""
-    ### Technical Purview
         
     SAS (SAS Base, SAS Advanced, SAS SQL, SAS Macros, SAS Stat, SAS IML, SAS Graphs etc.,), SAS EM & SAS EG
     
@@ -109,8 +108,6 @@ Hands on with Model Development, Model Validation, Model Deployment, Model Monit
     Market Risk: Building and Validating Value at Risk Models, Binomial Option pricing models, Black scholes models, Stochastic Models and GARCH, EWMA and other statistical, Mathematical and Financial Models for Banking sector.
     
     Consumer Analytics: Market Basket Analysis, Marketing Mixed Modelling, Media Mixed Modelling, Coverage Analysis, Segmentation, Clustering, Predictive Modelling, Sales forecasting, Churn Analysis, and Sampling Techniques.
-
-
 
     """
     )
