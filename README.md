@@ -1,0 +1,2 @@
+Data Science, Engineering and Analytics Manager/Architect with 12 years of experience in Machine Learning, Financial Modelling, Statistical Modelling, NLP, Deep Learning, MLOps, Data Engineering and Data Analytics using Python, R, SAS, pyspark, git, docker, AWS, Azure, Tableau, Alteryx, Web Frameworks, SQL, NoSQL, Excel etc.,
+Currently working at WELLS FARGO, Bangalore as Vice President -Lead Quant Model Solutions Specialist and PhD Scholar in Deep Learning at Capital University, Jharkhand.
