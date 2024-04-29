@@ -221,9 +221,11 @@ Above projects include extensive data extractions, data transformations, data an
 
 #### Personal Details
 Date of Birth:			February 12th, 1989
+
 Present Address:	No: 7, PJR enclave road, near railway station, Lingampally- 500050
-  THANK YOU	
-  [Chennakesh S]
+
+                                                                  THANK YOU	
+                                                                  [Chennakesh S]
 
 
 
