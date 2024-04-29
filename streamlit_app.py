@@ -89,21 +89,22 @@ Hands on with Model Development, Model Validation, Model Deployment, Model Monit
 
 •	Coordinating with various stakeholders in line of business, model implementation team, Model Risk Management, Model Governance to ensure flawless and timely delivery of models in compliance with Model Risk Policies and Regulatory Frameworks.
 
-### Technical Purview
+with st.expander("See explanation"):
+    ### Technical Purview
+        
+    SAS (SAS Base, SAS Advanced, SAS SQL, SAS Macros, SAS Stat, SAS IML, SAS Graphs etc.,), SAS EM & SAS EG
     
-SAS (SAS Base, SAS Advanced, SAS SQL, SAS Macros, SAS Stat, SAS IML, SAS Graphs etc.,), SAS EM & SAS EG
-
-R Studio, R Open, Microsoft R, RevoscaleR, mrsdeploy
-
-Python (Spyder, ipython, Jupyter and other environments)-pandas, numpy, sklearn, statmodels, OpenCV, keras, tensorflow, pytorch, h2o, pycaret, CausalML, streamlit, Airflow, multiprocessing, Joblib, NLTK, Scipy, Spacy, pytorch transformers etc..)
-
-Other Tools/Environments: Hadoop (Hive, Pig, pyspark), ECL, Tableau , Alteryx and Power BI
-
-Credit Risk: Building and Validating Probability of Default, Loss Given Default, Exposure at Default, Credit Revenue Forecast, Interest Income and Non-Income forecast and many other models
-
-Market Risk: Building and Validating Value at Risk Models, Binomial Option pricing models, Black scholes models, Stochastic Models and GARCH, EWMA and other statistical, Mathematical and Financial Models for Banking sector.
-
-Consumer Analytics: Market Basket Analysis, Marketing Mixed Modelling, Media Mixed Modelling, Coverage Analysis, Segmentation, Clustering, Predictive Modelling, Sales forecasting, Churn Analysis, and Sampling Techniques.
+    R Studio, R Open, Microsoft R, RevoscaleR, mrsdeploy
+    
+    Python (Spyder, ipython, Jupyter and other environments)-pandas, numpy, sklearn, statmodels, OpenCV, keras, tensorflow, pytorch, h2o, pycaret, CausalML, streamlit, Airflow, multiprocessing, Joblib, NLTK, Scipy, Spacy, pytorch transformers etc..)
+    
+    Other Tools/Environments: Hadoop (Hive, Pig, pyspark), ECL, Tableau , Alteryx and Power BI
+    
+    Credit Risk: Building and Validating Probability of Default, Loss Given Default, Exposure at Default, Credit Revenue Forecast, Interest Income and Non-Income forecast and many other models
+    
+    Market Risk: Building and Validating Value at Risk Models, Binomial Option pricing models, Black scholes models, Stochastic Models and GARCH, EWMA and other statistical, Mathematical and Financial Models for Banking sector.
+    
+    Consumer Analytics: Market Basket Analysis, Marketing Mixed Modelling, Media Mixed Modelling, Coverage Analysis, Segmentation, Clustering, Predictive Modelling, Sales forecasting, Churn Analysis, and Sampling Techniques.
 
 
 
