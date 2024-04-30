@@ -14,8 +14,21 @@
 
 import streamlit as st
 from streamlit.logger import get_logger
+from streamlit_option_menu import option_menu
 
 LOGGER = get_logger(__name__)
+
+# 3. CSS style definitions
+selected3 = option_menu(None, ["Profile", "Skills",  "Projects", 'Org'], 
+    icons=['house', 'cloud-upload', "list-task", 'gear'], 
+    menu_icon="cast", default_index=0, orientation="horizontal",
+    styles={
+        "container": {"padding": "0!important", "background-color": "#fafafa"},
+        "icon": {"color": "orange", "font-size": "25px"}, 
+        "nav-link": {"font-size": "25px", "text-align": "left", "margin":"0px", "--hover-color": "#eee"},
+        "nav-link-selected": {"background-color": "green"},
+    }
+)
 
 
 def run():
