@@ -39,7 +39,7 @@ def run():
                             icons=['list-task', 'list-task', "list-task", 'gear','list-task'],
                             on_change=on_change, key='menu_5', orientation="horizontal")
     selected3        
-    if selected3=="Profile":
+    if selected3=="Short Profile":
         st.markdown(
             """
     ### Profile Summary
@@ -168,7 +168,7 @@ def run():
 
         """
         )
-    if selected3=="Org":
+    if selected3=="ORG":
         st.markdown(
             """
     ### Organisational Experience, Organisation Name, Designation
@@ -227,6 +227,7 @@ def run():
         """
         )
 
+    if selected3=="Education":
         st.markdown(
             """
     #### Education
