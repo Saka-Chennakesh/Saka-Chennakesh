@@ -24,7 +24,8 @@ def run():
     st.set_page_config(
         page_title="Saka Chennakesh",
         page_icon="👋",
-        layout="wide"
+        layout="wide",
+        page_view='dark'
     )
 
     st.write("# Saka Chennakesh Profile 👋")
