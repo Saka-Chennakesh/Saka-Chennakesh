@@ -35,7 +35,7 @@ def run():
         selection = st.session_state[key]
         st.write(f"Selection changed to {selection}")
     
-    selected3 = option_menu(None, ["Short Profile", "Skills",  "Projects", 'ORG',"Education"],
+    selected3 = option_menu(None, ["Summary", "Skills",  "Projects", 'ORG',"EDU"],
                             icons=['list-task', 'list-task', "list-task", 'gear','list-task'],
                             on_change=on_change, key='menu_5', orientation="horizontal")
     selected3        
