@@ -110,16 +110,19 @@ def run():
         
     if selected3=="Projects":
 
-        st.markdown(
-            """
     ### Projects
     #### Evoke Technologies:
+    with st.expander("See explanation"):
+        st.markdown("""
     1.	[Invoice digitization](https://www.evoketechnologies.com/blog/invoice-digitization-using-resnet50-yolov5-and-adobe-ocr/) to extract key invoice attributes from large variety of scanned/system generated invoices using Deep learning architectures such as Keras Retinanet, Yolov5, BERT for a Chemical Manufacturer.
     2.	Extracting key attributes such as expiry date, manufacturer date, batches, chemical name, chemical composition from Scanned/System generated Certificate of Analysis for a Chemical Manufacturer using Deep learning architectures such as Keras Retinanet, Yolov5 and NLP based Transformer models.
     3.	Checkbox detection/classification of different forms for one of the largest door manufacturers in North America using Deep learning architectures such as Keras Retinanet and Yolov5.
     4.	Price Optimization using Statistical Models, Deep Learning (Yolov3 and MTCNN) to add loaded images for Online Retailer.
     5.	Multilock Service Recommender using Statistical modelling, Brute Force Approach and Complex Statistical Customized Approach because the model is for Rare Event Prediction.
     6.	Automated Extracting Attributes or content such as Registrant Name, State, Trading symbols, Financial Year, Risk Factors, Legal Proceedings, Safety Disclosures and Extracting Financial Statements from Form 10K, Form 8K and Form 10Q Annual/Quarterly Reports of any Company/Organization.  Used DL Models such as resnet, Yolo etc., and NLP models such as NER CRF, BERT etc.,
+        """)
+        st.markdown(
+            """
     #### KPMG:
     7.	PPNR-Prime Brokerage and Prime Financing model using time series regression, VARMAX, VECM, ARIMAX and other time series and quantitative methods
     8.	Deposit Service charge models using time series regression and restricted VAR models
