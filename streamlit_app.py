@@ -125,6 +125,14 @@ def run():
         """
         )
 
+
+        dataset = pd.read_excel("skills.xlsx")
+        
+        st.set_page_config(page_title="Technical Purview", layout="wide")
+        
+        
+        st.write(dataset)
+
     if selected3=="Projects":
 
         st.markdown(
