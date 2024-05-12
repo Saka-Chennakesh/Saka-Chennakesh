@@ -109,7 +109,7 @@ def run():
     # expander = st.expander("### Technical Purview")
     # expander.write("""
 
-        dataset = pd.read_excel("skills.xlsx")
+        dataset = pd.read_excel("skills.xlsx", engine='openpyxl')
         
         
         st.write(dataset)
