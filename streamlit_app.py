@@ -105,7 +105,7 @@ def run():
         )
 
     if selected3=="Skills":
-        dataset = pd.read_csv("skills.csv")
+        dataset = pd.read_csv("skills.csv",index_col = False)
         st.markdown(dataset.to_html(escape=False), unsafe_allow_html=True)
         
     if selected3=="Projects":
@@ -153,12 +153,12 @@ def run():
         )
     if selected3=="ORG":
 
-        dataset = pd.read_csv("org.csv", encoding='ISO-8859-1')
+        dataset = pd.read_csv("org.csv", encoding='ISO-8859-1',index_col = False)
         #st.markdown(dataset.to_html(escape=False), unsafe_allow_html=True)
         st.markdown(dataset.to_html(escape=False), unsafe_allow_html=True)
     if selected3=="Education":
 
-        dataset = pd.read_csv("edu.csv")
+        dataset = pd.read_csv("edu.csv",index_col = False)
         st.markdown(dataset.to_html(escape=False), unsafe_allow_html=True)
 
 if __name__ == "__main__":
