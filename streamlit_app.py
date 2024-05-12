@@ -29,7 +29,7 @@ def run():
     )
 
     st.write("# Saka Chennakesh 👋")
-    st.image('photo.jpg', caption='Profile Pic', width=400, height=300)
+    st.image('photo.jpg', caption='Profile Pic', width=400)
 #    st.sidebar.success("Select a demo above.")
     #"Profile", "Skills",  "Projects", 'Org'
     def on_change(key):
