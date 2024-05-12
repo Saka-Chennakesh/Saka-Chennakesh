@@ -154,7 +154,8 @@ def run():
     if selected3=="ORG":
 
         dataset = pd.read_csv("org.csv", encoding='ISO-8859-1')
-        st.markdown(dataset.to_html(escape=False), unsafe_allow_html=True)
+        #st.markdown(dataset.to_html(escape=False), unsafe_allow_html=True)
+        st.dataframe(dataset.style.highlight_max(axis=0))
     if selected3=="Education":
 
         dataset = pd.read_csv("edu.csv")
