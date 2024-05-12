@@ -139,10 +139,10 @@ def run():
     14.	Level predictions using word2vec, udpipe, lexicons and multilevel chaid algorithms
     15.	Durable sales forecast model using boosting techniques, high performance Machine learning, Arimax, Varmax, Arch and Garch models
     16.	Claim Process Automation by building the models for Claim Status Classification and Claim amount prediction using different ML models for one of the largest Fork uplifting Manufacturer
-        """)
+            """)
         
     #### Genpact:
-            with st.expander("GENPACT"):
+        with st.expander("GENPACT"):
             st.markdown("""
     17.	Asset based lending models using time series regression, quantitate and qualitative methods
     18.	Commercial and Auto loan models using logistic regression and other machine learning methods
@@ -150,16 +150,16 @@ def run():
     20.	Employee cost to company model using dummy variable analysis, regression techniques, statistical assumptions, and quantitative methods.
     21.	Propensity to Buy and Propensity to sell models
     22.	Patient Enrolment Forecast, Drop out Prediction and Drop out Forecast for several Clinical Trails/Studies using Simulation Techniques, Several Distributions and Several Timeseries Models
-        """)
+            """)
     #### TCS:
-            with st.expander("TCS"):
+        with st.expander("TCS"):
             st.markdown("""
     23.	Sales Value, Sales Volume and Penetration forecasts using Universe estimates, iterative proportional fitting, and different forecasting models for Australian Retailers.
     24.	Campaign modelling analytics, trend analytics, supply chain analytics, consumer analytics for product level, SKU level management for Australian Retailers
     25.	Retail loan Interest income forecast model using advanced mean based and variance-based forecasting models
     26.	Retail Score card models using different types logistic regressions and assumption-based models
     27.	Customer Attrition models using several machine learning and statistical models for Australian Retailers.
-        """)
+            """)
 
         st.markdown("""
     Above projects include extensive data extractions, data transformations, data analytics, model building, model validation, model implementation, model monitoring, model review, model deployment and/or product development.
