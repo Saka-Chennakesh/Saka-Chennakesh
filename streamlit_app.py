@@ -154,7 +154,7 @@ def run():
     if selected3=="ORG":
 
         dataset = pd.read_csv("org.csv",encoding='cp1252')
-        st.dataframe(dataset)
+        st.dataframe(dataset.to_html(escape=False))
     if selected3=="Education":
 
         dataset = pd.read_csv("edu.csv")
