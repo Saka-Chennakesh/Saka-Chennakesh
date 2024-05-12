@@ -29,29 +29,7 @@ def run():
     )
 
     st.write("# Saka Chennakesh 👋")
-    def add_logo():
-        st.markdown(
-            """
-            <style>
-                [data-testid="stSidebarNav"] {
-                    background-image: url(https://github.com/Saka-Chennakesh/Saka-Chennakesh/blob/main/photo.jpg);
-                    background-repeat: no-repeat;
-                    padding-top: 120px;
-                    background-position: 20px 20px;
-                }
-                [data-testid="stSidebarNav"]::before {
-                    content: "My Company Name";
-                    margin-left: 20px;
-                    margin-top: 20px;
-                    font-size: 30px;
-                    position: relative;
-                    top: 100px;
-                }
-            </style>
-            """,
-            unsafe_allow_html=True,
-        )
-     add_logo()
+    st.image('photo.jpg', caption='Sunrise by the mountains')
 #    st.sidebar.success("Select a demo above.")
     #"Profile", "Skills",  "Projects", 'Org'
     def on_change(key):
