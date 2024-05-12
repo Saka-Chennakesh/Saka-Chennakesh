@@ -51,7 +51,7 @@ def run():
             """,
             unsafe_allow_html=True,
         )
-     
+     add_logo()
 #    st.sidebar.success("Select a demo above.")
     #"Profile", "Skills",  "Projects", 'Org'
     def on_change(key):
