@@ -155,7 +155,12 @@ def run():
 
         dataset = pd.read_csv("org.csv", encoding='ISO-8859-1')
         #st.markdown(dataset.to_html(escape=False), unsafe_allow_html=True)
-        st.dataframe(dataset, width=5000)
+        #st.dataframe(dataset, width=5000)
+        st.data_editor(dataset,
+                column_config={
+                      'col1':st.column_config.TextColumn(
+                      "Column_name",
+                         width=350))
     if selected3=="Education":
 
         dataset = pd.read_csv("edu.csv")
