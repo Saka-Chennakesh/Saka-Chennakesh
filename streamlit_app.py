@@ -111,8 +111,8 @@ def run():
     if selected3=="Projects":
 
     ### Projects
-    #### Evoke Technologies:
-        with st.expander("See explanation"):
+    
+        with st.expander(#### Evoke Technologies:):
             st.markdown("""
         1.	[Invoice digitization](https://www.evoketechnologies.com/blog/invoice-digitization-using-resnet50-yolov5-and-adobe-ocr/) to extract key invoice attributes from large variety of scanned/system generated invoices using Deep learning architectures such as Keras Retinanet, Yolov5, BERT for a Chemical Manufacturer.
         2.	Extracting key attributes such as expiry date, manufacturer date, batches, chemical name, chemical composition from Scanned/System generated Certificate of Analysis for a Chemical Manufacturer using Deep learning architectures such as Keras Retinanet, Yolov5 and NLP based Transformer models.
