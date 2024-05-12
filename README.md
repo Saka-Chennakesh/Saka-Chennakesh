@@ -1,100 +1,74 @@
-# streamlit-option-menu
-![](./img/menu.png)
-![](./img/horizontal_menu.png)
-![](./img/styled_menu.png)
+[![Build Status](https://travis-ci.org/python-excel/xlrd.svg?branch=master)](https://travis-ci.org/python-excel/xlrd)
+[![Coverage Status](https://coveralls.io/repos/github/python-excel/xlrd/badge.svg?branch=master)](https://coveralls.io/github/python-excel/xlrd?branch=master)
+[![Documentation Status](https://readthedocs.org/projects/xlrd/badge/?version=latest)](http://xlrd.readthedocs.io/en/latest/?badge=latest)
+[![PyPI version](https://badge.fury.io/py/xlrd.svg)](https://badge.fury.io/py/xlrd)
 
-streamlit-option-menu is a simple Streamlit component that allows users to select a single item from a list of options in a menu.
-It is similar in function to st.selectbox(), except that:
-- It uses a simple static list to display the options instead of a dropdown
-- It has configurable icons for each option item and the menu title
-- The CSS styles of most HTML elements in the menu can be customized (see the styles parameter and Example #3 below)
+### xlrd
 
-It is built on [streamlit-component-template-vue](https://github.com/andfanilo/streamlit-component-template-vue), styled with [Bootstrap](https://getbootstrap.com/) and with icons from [bootstrap-icons](https://icons.getbootstrap.com/)
+Please read this before using this library: https://groups.google.com/d/msg/python-excel/P6TjJgFVjMI/g8d0eWxTBQAJ
 
-## Installation
-```
-pip install streamlit-option-menu
-```
+**Purpose**: Provide a library for developers to use to extract data from Microsoft Excel (tm) spreadsheet files. It is not an end-user tool.
 
-## Parameters
-The `option_menu` function accepts the following parameters:
-- menu_title (required): the title of the menu; pass None to hide the title
-- options (required): list of (string) options to display in the menu; set an option to "---" if you want to insert a section separator
-- default_index (optional, default=0): the index of the selected option by default
-- menu_icon (optional, default="menu-up"): name of the [bootstrap-icon](https://icons.getbootstrap.com/) to be used for the menu title
-- icons (optional, default=["caret-right"]): list of [bootstrap-icon](https://icons.getbootstrap.com/) names to be used for each option; its length should be equal to the length of options
-- orientation (optional, default="vertical"): "vertical" or "horizontal"; whether to display the menu vertically or horizontally
-- styles (optional, default=None): A dictionary containing the CSS definitions for most HTML elements in the menu, including:
-    * "container": the container div of the entire menu
-    * "menu-title": the &lt;a> element containing the menu title
-    * "menu-icon": the icon next to the menu title
-    * "nav": the &lt;ul> containing "nav-link"
-    * "nav-item": the &lt;li> element containing "nav-link"
-    * "nav-link": the &lt;a> element containing the text of each option
-    * "nav-link-selected": the &lt;a> element containing the text of the selected option
-    * "icon": the icon next to each option
-    * "separator": the &lt;hr> element separating the options
-- manual_select: Pass to manually change the menu item selection. 
-The function returns the (string) option currently selected
-- on_change: A callback that will happen when the selection changes. The callback function should accept one argument "key". You can use it to fetch the value of the menu (see [example 5](#examples))
+**Author**: John Machin, Lingfo Pty Ltd (sjmachin@lexicon.net)
 
+**Licence**: BSD-style (see licences.py)
 
+**Versions of Python supported**: 2.7, 3.4+.
 
-### Manual Selection
-This option was added to allow the user to manually move to a specific option in the menu. This could be useful when the user wants to move to another option automatically after finishing with one option (for example, if settings are approved, then move back to the main option).
+**External modules required**:
 
-To use this option, you need to pass the index of the desired option as `manual_select`. **Notice**: This option behaves like a button. This means that you should only pass `manual_select` once when you want to select the option, and not keep it as a constant value in your menu creation call (see example below).
+The package itself is pure Python with no dependencies on modules or packages outside the standard Python distribution.
 
+**Outside the current scope**: xlrd will safely and reliably ignore any of these if present in the file:
 
-## Examples
+*   Charts, Macros, Pictures, any other embedded object. WARNING: currently this includes embedded worksheets.
+*   VBA modules
+*   Formulas (results of formula calculations are extracted, of course).
+*   Comments
+*   Hyperlinks
+*   Autofilters, advanced filters, pivot tables, conditional formatting, data validation
+
+**Unlikely to be done**:
+
+*   Handling password-protected (encrypted) files.
+
+**Particular emphasis (refer docs for details)**:
+
+*   Operability across OS, regions, platforms
+*   Handling Excel's date problems, including the Windows / Macintosh four-year differential.
+*   Providing access to named constants and named groups of cells (from version 0.6.0)
+*   Providing access to "visual" information: font, "number format", background, border, alignment and protection for cells, height/width etc for rows/columns (from version 0.6.1)
+
+**Quick start**:
+
 ```python
-import streamlit as st
-from streamlit_option_menu import option_menu
-
-# 1. as sidebar menu
-with st.sidebar:
-    selected = option_menu("Main Menu", ["Home", 'Settings'], 
-        icons=['house', 'gear'], menu_icon="cast", default_index=1)
-    selected
-
-# 2. horizontal menu
-selected2 = option_menu(None, ["Home", "Upload", "Tasks", 'Settings'], 
-    icons=['house', 'cloud-upload', "list-task", 'gear'], 
-    menu_icon="cast", default_index=0, orientation="horizontal")
-selected2
-
-# 3. CSS style definitions
-selected3 = option_menu(None, ["Home", "Upload",  "Tasks", 'Settings'], 
-    icons=['house', 'cloud-upload', "list-task", 'gear'], 
-    menu_icon="cast", default_index=0, orientation="horizontal",
-    styles={
-        "container": {"padding": "0!important", "background-color": "#fafafa"},
-        "icon": {"color": "orange", "font-size": "25px"}, 
-        "nav-link": {"font-size": "25px", "text-align": "left", "margin":"0px", "--hover-color": "#eee"},
-        "nav-link-selected": {"background-color": "green"},
-    }
-)
-
-# 4. Manual item selection
-if st.session_state.get('switch_button', False):
-    st.session_state['menu_option'] = (st.session_state.get('menu_option', 0) + 1) % 4
-    manual_select = st.session_state['menu_option']
-else:
-    manual_select = None
-    
-selected4 = option_menu(None, ["Home", "Upload", "Tasks", 'Settings'], 
-    icons=['house', 'cloud-upload', "list-task", 'gear'], 
-    orientation="horizontal", manual_select=manual_select, key='menu_4')
-st.button(f"Move to Next {st.session_state.get('menu_option', 1)}", key='switch_button')
-selected4
-
-# 5. Add on_change callback
-def on_change(key):
-    selection = st.session_state[key]
-    st.write(f"Selection changed to {selection}")
-    
-selected5 = option_menu(None, ["Home", "Upload", "Tasks", 'Settings'],
-                        icons=['house', 'cloud-upload', "list-task", 'gear'],
-                        on_change=on_change, key='menu_5', orientation="horizontal")
-selected5
+import xlrd
+book = xlrd.open_workbook("myfile.xls")
+print("The number of worksheets is {0}".format(book.nsheets))
+print("Worksheet name(s): {0}".format(book.sheet_names()))
+sh = book.sheet_by_index(0)
+print("{0} {1} {2}".format(sh.name, sh.nrows, sh.ncols))
+print("Cell D30 is {0}".format(sh.cell_value(rowx=29, colx=3)))
+for rx in range(sh.nrows):
+    print(sh.row(rx))
 ```
+
+**Another quick start**: This will show the first, second and last rows of each sheet in each file:
+
+    python PYDIR/scripts/runxlrd.py 3rows *blah*.xls
+
+**Installation**:
+
+*   On Windows: use the installer.
+*   Any OS: Unzip the .zip file into a suitable directory, chdir to that directory, then do "python setup.py install".
+*   If PYDIR is your Python installation directory: the main files are in PYDIR/Lib/site-packages/xlrd the docs are in the doc subdirectory, and there's a sample script: PYDIR/Scripts/runxlrd.py
+*   If os.sep != "/": make the appropriate adjustments.
+
+**Acknowledgements**:
+
+*   This package started life as a translation from C into Python of parts of a utility called "xlreader" developed by David Giffin. "This product includes software developed by David Giffin <david@giffin.org>."
+*   OpenOffice.org has truly excellent documentation of the Microsoft Excel file formats and Compound Document file format, authored by Daniel Rentz. See http://sc.openoffice.org
+*   U+5F20 U+654F: over a decade of inspiration, support, and interesting decoding opportunities.
+*   Ksenia Marasanova: sample Macintosh and non-Latin1 files, alpha testing
+*   Backporting to Python 2.1 was partially funded by Journyx - provider of timesheet and project accounting solutions (http://journyx.com/).
+*   Provision of formatting information in version 0.6.1 was funded by Simplistix Ltd (http://www.simplistix.co.uk/)
