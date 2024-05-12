@@ -106,7 +106,7 @@ def run():
 
     if selected3=="Skills":
         dataset = pd.read_csv("skills.csv")
-        st.markdown(dataset.to_html(escape=False), unsafe_allow_html=True)
+        st.markdown(dataset, unsafe_allow_html=True)
 
     if selected3=="Projects":
 
