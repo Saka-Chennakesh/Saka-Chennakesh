@@ -165,8 +165,6 @@ def run():
     Above projects include extensive data extractions, data transformations, data analytics, model building, model validation, model implementation, model monitoring, model review, model deployment and/or product development.
         """)
 
-        """
-        )
     if selected3=="ORG":
 
         dataset = pd.read_csv("org.csv", encoding='ISO-8859-1',index_col = False)
