@@ -105,14 +105,8 @@ def run():
         )
 
     if selected3=="Skills":
-        
-    # expander = st.expander("### Technical Purview")
-    # expander.write("""
-
         dataset = pd.read_csv("skills.csv")
-        
-        
-        st.write(dataset)
+        st.markdown(dataset.to_html(escape=False), unsafe_allow_html=True)
 
     if selected3=="Projects":
 
