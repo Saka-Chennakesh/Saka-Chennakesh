@@ -153,7 +153,7 @@ def run():
         )
     if selected3=="ORG":
 
-        dataset = pd.read_csv("org.csv",encoding='cp1252')
+        dataset = pd.read_excel("org.xls")
         st.markdown(dataset.to_html(escape=False), unsafe_allow_html=True)
     if selected3=="Education":
 
