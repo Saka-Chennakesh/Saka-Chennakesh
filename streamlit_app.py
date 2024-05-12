@@ -120,11 +120,10 @@ def run():
         4.	Price Optimization using Statistical Models, Deep Learning (Yolov3 and MTCNN) to add loaded images for Online Retailer.
         5.	Multilock Service Recommender using Statistical modelling, Brute Force Approach and Complex Statistical Customized Approach because the model is for Rare Event Prediction.
         6.	Automated Extracting Attributes or content such as Registrant Name, State, Trading symbols, Financial Year, Risk Factors, Legal Proceedings, Safety Disclosures and Extracting Financial Statements from Form 10K, Form 8K and Form 10Q Annual/Quarterly Reports of any Company/Organization.  Used DL Models such as resnet, Yolo etc., and NLP models such as NER CRF, BERT etc.,
-        """)
-        st.markdown(
-        """
+            """)
+        
     #### KPMG:
-            with st.expander("KPMG"):
+        with st.expander("KPMG"):
             st.markdown("""
     7.	PPNR-Prime Brokerage and Prime Financing model using time series regression, VARMAX, VECM, ARIMAX and other time series and quantitative methods
     8.	Deposit Service charge models using time series regression and restricted VAR models
@@ -133,7 +132,7 @@ def run():
     11.	PD model for petroleum engineering team using production and explored wells data
         """)
     #### Prokarma:
-            with st.expander("Prokarma"):
+        with st.expander("Prokarma"):
             st.markdown("""
     12.	Variable rate irrigation model using mathematical business models
     13.	Customized Sentiment Analysis using NLP, sentimentr, udpipe and several corpuses and lexicons
