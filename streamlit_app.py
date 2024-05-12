@@ -15,6 +15,7 @@
 import streamlit as st
 from streamlit.logger import get_logger
 from streamlit_option_menu import option_menu
+import pandas as pd
 
 LOGGER = get_logger(__name__)
 
