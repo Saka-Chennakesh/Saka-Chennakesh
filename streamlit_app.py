@@ -122,7 +122,7 @@ def run():
         )
 
     if selected3=="Skills":
-        dataset = pd.read_csv("skills.csv",header=True, index_col=False, encoding='ascii')
+        dataset = pd.read_csv("skills.csv",header=True, index_col=False, encoding='ISO-8859-1')
         st.write(dataset)
         
     if selected3=="Projects":
