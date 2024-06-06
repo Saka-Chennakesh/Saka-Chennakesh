@@ -174,7 +174,7 @@ def run():
             dataset = pd.read_csv("org.csv", encoding='ISO-8859-1',index_col = False)
             #st.markdown(dataset.to_html(escape=False), unsafe_allow_html=True)
             st.markdown(dataset.iloc[0:1,0:4].style.hide(axis="index").to_html(), unsafe_allow_html=True)
-            st.markdown(dataset.iloc[0:1,4:6].values.astype(str).split('\n').style.hide(axis="index").to_html(), unsafe_allow_html=True)
+            st.markdown(dataset.iloc[0:1,4:6].values.tolist().split('\n').style.hide(axis="index").to_html(), unsafe_allow_html=True)
             
     if selected3=="Education":
 
