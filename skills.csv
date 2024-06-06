@@ -9,7 +9,7 @@ SAS,"SAS Base, SAS Advanced, SAS SQL, SAS Macros, SAS Stat, SAS IML, SAS Graphs 
 R Program,"R Studio, R Open, Microsoft R, RevoscaleR, mrsdeploy"
 Big Data Engineering ,"Hadoop (Hive, Pig, pyspark), ECL, Alteryx, Snowflake, Dremio, AWS Data lakes, Azure Cosmos DB"
 BI Tools,"Tableau, Alteryx, and Power BI"
-MLOps/DevOps,"Git, Docker, Kubernetes, Splunk, Dagster, Airflow, Azure Data Factory, Azure Data Bricks, AWS Sagemaker"
+MLOps_DevOps,"Git, Docker, Kubernetes, Splunk, Dagster, Airflow, Azure Data Factory, Azure Data Bricks, AWS Sagemaker"
 Credit Risk: ,"Building and Validating:
 Probability of Default, 
 Loss Given Default, 
