@@ -22,11 +22,7 @@ LOGGER = get_logger(__name__)
 
 
 def run():
-    st.set_page_config(
-        page_title="Saka Chennakesh",
-        page_icon="👋",
-        layout="wide"
-    )
+    
     st.markdown(
     """
     <style>
@@ -39,6 +35,11 @@ def run():
     """,
     unsafe_allow_html=True
 )
+    st.set_page_config(
+        page_title="Saka Chennakesh",
+        page_icon="👋",
+        layout="wide"
+    )
 
     st.write("# Saka Chennakesh 👋")
     st.image('photo.jpg', caption='Profile Photo', width=200)
