@@ -116,17 +116,20 @@ def run():
             st.markdown("""
         1.	[Invoice digitization](https://www.evoketechnologies.com/blog/invoice-digitization-using-resnet50-yolov5-and-adobe-ocr/) to extract key invoice attributes from large variety of scanned/system generated invoices using Deep learning architectures such as Keras Retinanet, Yolov5, BERT for a Chemical Manufacturer.
         2.	Extracting key attributes such as expiry date, manufacturer date, batches, chemical name, chemical composition from Scanned/System generated Certificate of Analysis for a Chemical Manufacturer using Deep learning architectures such as Keras Retinanet, Yolov5 and NLP based Transformer models.
-        3.	Checkbox detection/classification of different forms for one of the largest door manufacturers in North America using Deep learning architectures such as Keras Retinanet and Yolov5.
-        4.	Price Optimization using Statistical Models, Deep Learning (Yolov3 and MTCNN) to add loaded images for Online Retailer.
+        3.	[Checkbox detection/classification](https://www.evoketechnologies.com/blog/yolo-modeling-for-checkboxes-detection-classification/) of different forms for one of the largest door manufacturers in North America using Deep learning architectures such as Keras Retinanet and Yolov5.
+        4.	[Price Optimization](https://www.evoketechnologies.com/blog/how-to-use-deep-ai-for-product-image-influence-on-ecommerce-sales-and-prices/) using Statistical Models, Deep Learning (Yolov3 and MTCNN) to add loaded images for Online Retailer.
         5.	Multilock Service Recommender using Statistical modelling, Brute Force Approach and Complex Statistical Customized Approach because the model is for Rare Event Prediction.
-        6.	Automated Extracting Attributes or content such as Registrant Name, State, Trading symbols, Financial Year, Risk Factors, Legal Proceedings, Safety Disclosures and Extracting Financial Statements from Form 10K, Form 8K and Form 10Q Annual/Quarterly Reports of any Company/Organization.  Used DL Models such as resnet, Yolo etc., and NLP models such as NER CRF, BERT etc.,
+        6. [Evoke Data Studio](https://www.evoketechnologies.com//wp-content/uploads/2023/09/Data-Studio.mp4)
+        7. [Evoke True ML](https://www.evoketechnologies.com//wp-content/uploads/2023/09/TrueML.mp4)
+        8. [Evoke True Vision](https://www.evoketechnologies.com/wp-content/uploads/2024/03/Truevision_cropped.mp4)
+        9.	Automated Extracting Attributes or content such as Registrant Name, State, Trading symbols, Financial Year, Risk Factors, Legal Proceedings, Safety Disclosures and Extracting Financial Statements from Form 10K, Form 8K and Form 10Q Annual/Quarterly Reports of any Company/Organization.  Used DL Models such as resnet, Yolo etc., and NLP models such as NER CRF, BERT etc.,
             """)
         
     #### KPMG:
         with st.expander("KPMG"):
             st.markdown("""
     7.	PPNR-Prime Brokerage and Prime Financing model using time series regression, VARMAX, VECM, ARIMAX and other time series and quantitative methods
-    8.	Deposit Service charge models using time series regression and restricted VAR models
+    8.	[Deposit Service charge models](https://github.com/SChennakesh/DataScience/blob/main/Deposit Service Charge Model) using time series regression and restricted VAR models
     9.	Macro rate model using time series regression, linear equation solutions, spreads mechanism and dynamic back testing
     10.	Ecuid predictions for Automobiles using multilevel chaid algorithm and ranger random forest algorithms
     11.	PD model for petroleum engineering team using production and explored wells data
