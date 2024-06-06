@@ -129,7 +129,7 @@ def run():
         with st.expander("KPMG"):
             st.markdown("""
     7.	PPNR-Prime Brokerage and Prime Financing model using time series regression, VARMAX, VECM, ARIMAX and other time series and quantitative methods
-    8.	[Deposit Service charge models](https://github.com/Saka-Chennakesh/Saka-Chennakesh/blob/main/Projects) using time series regression and restricted VAR models
+    8.	Deposit Service charge models using time series regression and restricted VAR models
     9.	Macro rate model using time series regression, linear equation solutions, spreads mechanism and dynamic back testing
     10.	Ecuid predictions for Automobiles using multilevel chaid algorithm and ranger random forest algorithms
     11.	PD model for petroleum engineering team using production and explored wells data
@@ -190,6 +190,9 @@ def run():
 
         st.markdown(dataset.iloc[4:5,0:4].style.hide(axis="index").to_html(), unsafe_allow_html=True)
         st.write(dataset.iloc[4:5,4:6].values.tolist()[0])
+
+        st.markdown(dataset.iloc[5:6,0:4].style.hide(axis="index").to_html(), unsafe_allow_html=True)
+        st.write(dataset.iloc[5:6,4:6].values.tolist()[0])
 
     
     if selected3=="Education":
