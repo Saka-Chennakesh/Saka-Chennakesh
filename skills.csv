@@ -1,27 +1,22 @@
 Technology,Skills
 Python,"Spyder, ipython, Jupyter and other environments
-pandas, numpy, sklearn, statmodels, 
-OpenCV, keras, tensorflow, pytorch,
-h2o, pycaret, CausalML, streamlit,
-Airflow, multiprocessing, Joblib,
-NLTK, Scipy, Spacy, pytorch transformers etc.."
+pandas, numpy, sklearn, statmodels, OpenCV, keras, tensorflow, pytorch,h2o, pycaret, CausalML, streamlit,Airflow, multiprocessing, Joblib,NLTK, Scipy, Spacy, pytorch transformers etc.."
 SAS,"SAS Base, SAS Advanced, SAS SQL, SAS Macros, SAS Stat, SAS IML, SAS Graphs etc.,, SAS EM & SAS EG"
 R Program,"R Studio, R Open, Microsoft R, RevoscaleR, mrsdeploy"
 Big Data Engineering ,"Hadoop (Hive, Pig, pyspark), ECL, Alteryx, Snowflake, Dremio, AWS Data lakes, Azure Cosmos DB"
 BI Tools,"Tableau, Alteryx, and Power BI"
 MLOps_DevOps,"Git, Docker, Kubernetes, Splunk, Dagster, Airflow, Azure Data Factory, Azure Data Bricks, AWS Sagemaker"
-Credit Risk: ,"Building and Validating:
+Credit Risk ,"Building and Validating
 Probability of Default, 
 Loss Given Default, 
 Exposure at Default, 
 Credit Revenue Forecast, Interest Income and Non-Income forecast and many other models"
-Market Risk: ,"Building and Validating:
+Market Risk ,"Building and Validating
 Value at Risk Models,
 Binomial Option pricing models, 
 Black scholes models, 
 Stochastic Models and GARCH, EWMA and other statistical, Mathematical and Financial Models for Banking sector."
-Consumer Analytics: ,"Market Basket Analysis, Marketing Mixed Modelling,
-Media Mixed Modelling, 
+Consumer Analytics ,"Market Basket Analysis, Marketing Mixed Modelling,Media Mixed Modelling, 
 Coverage Analysis, 
 Segmentation, 
 Clustering, 
