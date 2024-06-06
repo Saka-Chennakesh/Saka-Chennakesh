@@ -129,7 +129,7 @@ def run():
         with st.expander("KPMG"):
             st.markdown("""
     7.	PPNR-Prime Brokerage and Prime Financing model using time series regression, VARMAX, VECM, ARIMAX and other time series and quantitative methods
-    8.	[Deposit Service charge models](https://github.com/SChennakesh/DataScience/blob/main/Deposit Service Charge Model/) using time series regression and restricted VAR models
+    8.	[Deposit Service charge models](https://github.com/Saka-Chennakesh/Saka-Chennakesh/blob/main/Projects) using time series regression and restricted VAR models
     9.	Macro rate model using time series regression, linear equation solutions, spreads mechanism and dynamic back testing
     10.	Ecuid predictions for Automobiles using multilevel chaid algorithm and ranger random forest algorithms
     11.	PD model for petroleum engineering team using production and explored wells data
