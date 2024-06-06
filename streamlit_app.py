@@ -27,6 +27,19 @@ def run():
         page_icon="👋",
         layout="wide"
     )
+     st.markdown(
+    """
+    <style>
+    .reportview-container {
+        background: url("https://i.postimg.cc/4xgNnkfX/Untitled-design.png")
+    }
+   .sidebar .sidebar-content {
+        background: url("https://i.postimg.cc/4xgNnkfX/Untitled-design.png")
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
     st.write("# Saka Chennakesh 👋")
     st.image('photo.jpg', caption='Profile Photo', width=200)
