@@ -1,1 +1,26 @@
+Objective: Develop a model to forecast Total Deposit Service Charge Fee for next 9 Quarters as part CCAR FED submissions.
 
+Procedure: Forecasted all the below components to derive “Total Deposit Service Charge Fee for next 9 Quarters”.
+Modelling Based Components (Used ARIMA, ARIMAX, Time series Regression, ARDL-Auto regressive Distributed Lags and VARMAX)
+    •	Consumer overdraft/non fund sufficient fee
+    •	Small business OD Fee
+    •	Monthly maintenance fee
+    •	Foreign ATM net fee
+    •	Wire transfer fee
+    •	Check printing fee
+    •	Other DSC fee
+    •	OD protection fee
+
+Quantitative/Mathematical derived components
+
+    •	Consumer OD incident rate for ($ <500) and (500$ to 5000$ ) and >5000$
+    •	Small Business OD incident rate
+    •	Foreign ATM incident rate
+    •	Wire transfer fee per account
+
+Qualitative/ Assumption Based Components
+
+    •	Foreign ATM transaction fee waive rate
+    •	Wire transfer fee per account waive rate
+    •	SB gross fee waived rate
+    •	Consumer waived fee per account
