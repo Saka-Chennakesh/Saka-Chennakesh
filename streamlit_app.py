@@ -27,13 +27,12 @@ def run():
         page_icon="👋",
         layout="wide"
     )
-     st.markdown(
+    st.markdown(
     """
     <style>
     .reportview-container {
         background: url("https://i.postimg.cc/4xgNnkfX/Untitled-design.png")
-    }
-   .sidebar .sidebar-content {
+    }.sidebar .sidebar-content {
         background: url("https://i.postimg.cc/4xgNnkfX/Untitled-design.png")
     }
     </style>
