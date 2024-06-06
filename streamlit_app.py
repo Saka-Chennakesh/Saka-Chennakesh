@@ -169,11 +169,12 @@ def run():
         """)
 
     if selected3=="ORG":
-         with st.expander("Organisational Experience|	Organisation Name|	City|	Designation"):
+         # with st.expander("Evoke Technologies"):
             
             dataset = pd.read_csv("org.csv", encoding='ISO-8859-1',index_col = False).filter(items=[1],axis=0)
             #st.markdown(dataset.to_html(escape=False), unsafe_allow_html=True)
-            st.markdown(dataset.style.hide(axis="index").to_html(), unsafe_allow_html=True)
+            st.markdown(dataset["Organisational Experience", "Organisation Name", "City","Designation"].style.hide(axis="index").to_html(), unsafe_allow_html=True)
+            st.markdown(dataset["Roles & Responsibility"].style.hide(axis="index").to_html(), unsafe_allow_html=True)
             
     if selected3=="Education":
 
