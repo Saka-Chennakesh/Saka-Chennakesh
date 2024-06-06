@@ -122,8 +122,8 @@ def run():
         )
 
     if selected3=="Skills":
-        dataset = pd.read_csv("skills.csv",encoding='ISO-8859-1')
-        st.markdown(dataset.style.hide(axis="index").to_html(), unsafe_allow_html=True)
+        dataset = pd.read_csv("skills.csv",encoding='ISO-8859-1',index=False)
+        st.write(dataset)
         
     if selected3=="Projects":
 
