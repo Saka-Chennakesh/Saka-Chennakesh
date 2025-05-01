@@ -1,4 +1,5 @@
 # for testing
+streamlit
 nose
 nose_fixes
 nose-cov
