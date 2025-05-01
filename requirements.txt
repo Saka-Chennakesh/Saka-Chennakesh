@@ -1,1 +1,16 @@
+# for testing
 streamlit
+nose
+nose_fixes
+nose-cov
+coveralls
+tox
+# for docs
+sphinx
+pkginfo
+six
+# for build
+panci
+setuptools-git
+wheel
+twine
