@@ -22,7 +22,7 @@ jobs:
       - name: Set up Python version
         uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: '3.11'
 
       - name: Create and start virtual environment
         run: |
@@ -68,9 +68,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_828D6A07C0614BB998D12687169D9918 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_06F2ABF587DA49F880EFDB1B7EE34300 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_45FD0B5D9AB548B49E94CA60C838AFAA }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_4025B1822C7B40CEA16512CB00B335E7 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_FE978F72A7A14205AE86A7E1A847C2DC }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_FEBCF0E7FE134240B351BBCD260A1851 }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
